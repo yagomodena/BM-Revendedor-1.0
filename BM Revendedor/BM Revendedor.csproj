@@ -64,6 +64,18 @@
     <Compile Include="FORMULARIOS\Categoria\frmConCategoria.Designer.cs">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmCadMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmCadMarca.Designer.cs">
+      <DependentUpon>frmCadMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmConMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmConMarca.Designer.cs">
+      <DependentUpon>frmConMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +86,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Categoria\frmConCategoria.resx">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Marca\frmCadMarca.resx">
+      <DependentUpon>frmCadMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Marca\frmConMarca.resx">
+      <DependentUpon>frmConMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,7 +120,6 @@
     <Folder Include="FORMULARIOS\Entregas\" />
     <Folder Include="FORMULARIOS\Estoque\" />
     <Folder Include="FORMULARIOS\Faturamento\" />
-    <Folder Include="FORMULARIOS\Marca\" />
     <Folder Include="FORMULARIOS\Produto\" />
     <Folder Include="FORMULARIOS\Venda\" />
   </ItemGroup>

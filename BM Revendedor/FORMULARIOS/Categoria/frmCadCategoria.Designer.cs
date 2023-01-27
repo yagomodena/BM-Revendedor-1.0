@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtIDCategoria = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNomeCategoria = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,23 +45,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Categoria";
             // 
-            // textBox1
+            // txtIDCategoria
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(21, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtIDCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtIDCategoria.Location = new System.Drawing.Point(21, 37);
+            this.txtIDCategoria.Name = "txtIDCategoria";
+            this.txtIDCategoria.Size = new System.Drawing.Size(99, 26);
+            this.txtIDCategoria.TabIndex = 1;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(429, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnCadastrar.Location = new System.Drawing.Point(429, 33);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(110, 32);
+            this.btnCadastrar.TabIndex = 2;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -73,13 +73,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Nome Categoria";
             // 
-            // textBox3
+            // txtNomeCategoria
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(141, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 26);
-            this.textBox3.TabIndex = 6;
+            this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtNomeCategoria.Location = new System.Drawing.Point(141, 37);
+            this.txtNomeCategoria.Name = "txtNomeCategoria";
+            this.txtNomeCategoria.Size = new System.Drawing.Size(282, 26);
+            this.txtNomeCategoria.TabIndex = 6;
             // 
             // frmCadCategoria
             // 
@@ -87,10 +87,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(554, 80);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtNomeCategoria);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.txtIDCategoria);
             this.Controls.Add(this.label1);
             this.Name = "frmCadCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -103,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtIDCategoria;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNomeCategoria;
     }
 }
