@@ -1,5 +1,4 @@
-﻿using BM_Revendedor.FORMULARIOS.Categoria;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BM_Revendedor
+namespace BM_Revendedor.FORMULARIOS.Categoria
 {
-    public partial class Form1 : Form
+    public partial class frmConCategoria : Form
     {
-        public Form1()
+        public frmConCategoria()
         {
             InitializeComponent();
         }
 
-        private void btnCategoria_Click(object sender, EventArgs e)
+        private void btnCadastrarCategoria_Click(object sender, EventArgs e)
         {
-            frmConCategoria frm = new frmConCategoria();
+            frmCadCategoria frm = new frmCadCategoria();
             frm.Show();
         }
     }
