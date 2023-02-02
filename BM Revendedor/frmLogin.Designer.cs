@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDuvida = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -39,10 +41,9 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.chcExibirSenha = new System.Windows.Forms.CheckBox();
             this.btnCriarConta = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnDuvida = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.lbVersão = new System.Windows.Forms.Label();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +58,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 392);
             this.panel1.TabIndex = 1;
+            // 
+            // btnDuvida
+            // 
+            this.btnDuvida.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDuvida.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDuvida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDuvida.Font = new System.Drawing.Font("Arial", 10F);
+            this.btnDuvida.ForeColor = System.Drawing.Color.Black;
+            this.btnDuvida.Location = new System.Drawing.Point(213, 340);
+            this.btnDuvida.Name = "btnDuvida";
+            this.btnDuvida.Size = new System.Drawing.Size(110, 43);
+            this.btnDuvida.TabIndex = 11;
+            this.btnDuvida.Text = "Clique Aqui!";
+            this.btnDuvida.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 10F);
+            this.label6.Location = new System.Drawing.Point(12, 350);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(195, 19);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Está com alguma dúvida?";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -73,7 +99,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(381, 33);
+            this.label2.Location = new System.Drawing.Point(381, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 23);
             this.label2.TabIndex = 2;
@@ -84,6 +110,7 @@
             this.txtSenha.Font = new System.Drawing.Font("Arial", 10F);
             this.txtSenha.Location = new System.Drawing.Point(363, 164);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(232, 27);
             this.txtSenha.TabIndex = 3;
             // 
@@ -96,6 +123,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
@@ -138,7 +166,7 @@
             // 
             this.chcExibirSenha.AutoSize = true;
             this.chcExibirSenha.Font = new System.Drawing.Font("Arial", 8F);
-            this.chcExibirSenha.Location = new System.Drawing.Point(490, 197);
+            this.chcExibirSenha.Location = new System.Drawing.Point(497, 197);
             this.chcExibirSenha.Name = "chcExibirSenha";
             this.chcExibirSenha.Size = new System.Drawing.Size(105, 20);
             this.chcExibirSenha.TabIndex = 9;
@@ -159,31 +187,6 @@
             this.btnCriarConta.TabIndex = 10;
             this.btnCriarConta.Text = "Criar uma conta";
             this.btnCriarConta.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 10F);
-            this.label6.Location = new System.Drawing.Point(12, 350);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Está com alguma dúvida?";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnDuvida
-            // 
-            this.btnDuvida.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDuvida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDuvida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDuvida.Font = new System.Drawing.Font("Arial", 10F);
-            this.btnDuvida.ForeColor = System.Drawing.Color.Black;
-            this.btnDuvida.Location = new System.Drawing.Point(213, 340);
-            this.btnDuvida.Name = "btnDuvida";
-            this.btnDuvida.Size = new System.Drawing.Size(110, 43);
-            this.btnDuvida.TabIndex = 11;
-            this.btnDuvida.Text = "Clique Aqui!";
-            this.btnDuvida.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -207,12 +210,29 @@
             this.lbVersão.Text = "1.0";
             this.lbVersão.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Arial", 20F);
+            this.btnFechar.ForeColor = System.Drawing.Color.Red;
+            this.btnFechar.Location = new System.Drawing.Point(580, 0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(37, 43);
+            this.btnFechar.TabIndex = 14;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(614, 392);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.lbVersão);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnCriarConta);
@@ -229,6 +249,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -254,5 +275,6 @@
         private System.Windows.Forms.Button btnCriarConta;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbVersão;
+        private System.Windows.Forms.Button btnFechar;
     }
 }
