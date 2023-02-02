@@ -83,6 +83,7 @@
             this.btnFechar.TabIndex = 27;
             this.btnFechar.Text = "X";
             this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // chcExibirSenha
             // 
@@ -94,6 +95,7 @@
             this.chcExibirSenha.TabIndex = 23;
             this.chcExibirSenha.Text = "exibir senha";
             this.chcExibirSenha.UseVisualStyleBackColor = true;
+            this.chcExibirSenha.CheckedChanged += new System.EventHandler(this.chcExibirSenha_CheckedChanged);
             // 
             // txtUsuario
             // 
@@ -132,6 +134,7 @@
             this.btnCadastrar.TabIndex = 18;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // txtSenha
             // 

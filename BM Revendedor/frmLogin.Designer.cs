@@ -166,12 +166,13 @@
             // 
             this.chcExibirSenha.AutoSize = true;
             this.chcExibirSenha.Font = new System.Drawing.Font("Arial", 8F);
-            this.chcExibirSenha.Location = new System.Drawing.Point(497, 197);
+            this.chcExibirSenha.Location = new System.Drawing.Point(503, 197);
             this.chcExibirSenha.Name = "chcExibirSenha";
             this.chcExibirSenha.Size = new System.Drawing.Size(105, 20);
             this.chcExibirSenha.TabIndex = 9;
             this.chcExibirSenha.Text = "exibir senha";
             this.chcExibirSenha.UseVisualStyleBackColor = true;
+            this.chcExibirSenha.CheckedChanged += new System.EventHandler(this.chcExibirSenha_CheckedChanged);
             // 
             // btnCriarConta
             // 
@@ -187,6 +188,7 @@
             this.btnCriarConta.TabIndex = 10;
             this.btnCriarConta.Text = "Criar uma conta";
             this.btnCriarConta.UseVisualStyleBackColor = false;
+            this.btnCriarConta.Click += new System.EventHandler(this.btnCriarConta_Click);
             // 
             // label7
             // 
