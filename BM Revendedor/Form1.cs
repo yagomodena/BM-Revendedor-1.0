@@ -11,9 +11,11 @@ using System.Windows.Forms;
 
 namespace BM_Revendedor
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        private Form _objForm;
+
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -22,6 +24,19 @@ namespace BM_Revendedor
         {
             frmConCategoria frm = new frmConCategoria();
             frm.Show();
+        }
+
+        private void btnCategoria_Click_1(object sender, EventArgs e)
+        {
+            _objForm?.Close();
+            _objForm = new frmConCategoria()
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill
+            };
+
+            pnlExibirFormularios.Controls.Add(_objForm);
+            _objForm.Show();
         }
     }
 }

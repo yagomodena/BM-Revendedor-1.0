@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.chcExibirSenha = new System.Windows.Forms.CheckBox();
@@ -38,16 +40,17 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
@@ -57,13 +60,37 @@
             this.panel1.Size = new System.Drawing.Size(343, 392);
             this.panel1.TabIndex = 15;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Arial", 30F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(72, 201);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(199, 57);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Usuário";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 30F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(54, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(229, 57);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Cadastro";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 30F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(126, 160);
+            this.label1.Location = new System.Drawing.Point(129, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 57);
             this.label1.TabIndex = 2;
@@ -156,30 +183,6 @@
             this.label2.Text = "Informações do Novo Usuário";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 30F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(50, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(229, 57);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Cadastro";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 30F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(67, 223);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(199, 57);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Usuário";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -198,6 +201,15 @@
             this.txtConfirmarSenha.PasswordChar = '*';
             this.txtConfirmarSenha.Size = new System.Drawing.Size(232, 27);
             this.txtConfirmarSenha.TabIndex = 29;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BM_Revendedor.Properties.Resources.logo_transparent___Copia__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(82, 278);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 102);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // frmNovoUsuario
             // 
@@ -222,6 +234,7 @@
             this.Text = "frmNovoUsuario";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +256,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtConfirmarSenha;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

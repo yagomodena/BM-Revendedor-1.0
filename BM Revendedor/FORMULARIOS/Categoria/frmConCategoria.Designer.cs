@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtIDCategoria = new System.Windows.Forms.TextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNomeCategoria = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnCadastrarCategoria = new System.Windows.Forms.Button();
+            this.txtNomeCategoria = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtIDCategoria = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,33 +57,24 @@
             this.panel1.Size = new System.Drawing.Size(594, 121);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnCadastrarCategoria
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(17, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID Categoria";
+            this.btnCadastrarCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnCadastrarCategoria.Location = new System.Drawing.Point(457, 74);
+            this.btnCadastrarCategoria.Name = "btnCadastrarCategoria";
+            this.btnCadastrarCategoria.Size = new System.Drawing.Size(122, 36);
+            this.btnCadastrarCategoria.TabIndex = 6;
+            this.btnCadastrarCategoria.Text = "Cadastrar";
+            this.btnCadastrarCategoria.UseVisualStyleBackColor = true;
+            this.btnCadastrarCategoria.Click += new System.EventHandler(this.btnCadastrarCategoria_Click);
             // 
-            // txtIDCategoria
+            // txtNomeCategoria
             // 
-            this.txtIDCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtIDCategoria.Location = new System.Drawing.Point(20, 37);
-            this.txtIDCategoria.Name = "txtIDCategoria";
-            this.txtIDCategoria.Size = new System.Drawing.Size(100, 26);
-            this.txtIDCategoria.TabIndex = 1;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnPesquisar.Location = new System.Drawing.Point(457, 32);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(122, 36);
-            this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtNomeCategoria.Location = new System.Drawing.Point(140, 37);
+            this.txtNomeCategoria.Name = "txtNomeCategoria";
+            this.txtNomeCategoria.Size = new System.Drawing.Size(311, 26);
+            this.txtNomeCategoria.TabIndex = 5;
             // 
             // label2
             // 
@@ -93,13 +86,33 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Nome Categoria";
             // 
-            // txtNomeCategoria
+            // btnPesquisar
             // 
-            this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtNomeCategoria.Location = new System.Drawing.Point(140, 37);
-            this.txtNomeCategoria.Name = "txtNomeCategoria";
-            this.txtNomeCategoria.Size = new System.Drawing.Size(311, 26);
-            this.txtNomeCategoria.TabIndex = 5;
+            this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPesquisar.Location = new System.Drawing.Point(457, 32);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(122, 36);
+            this.btnPesquisar.TabIndex = 2;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // txtIDCategoria
+            // 
+            this.txtIDCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtIDCategoria.Location = new System.Drawing.Point(20, 37);
+            this.txtIDCategoria.Name = "txtIDCategoria";
+            this.txtIDCategoria.Size = new System.Drawing.Size(100, 26);
+            this.txtIDCategoria.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(17, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID Categoria";
             // 
             // dataGridView1
             // 
@@ -112,16 +125,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(594, 344);
             this.dataGridView1.TabIndex = 1;
             // 
-            // btnCadastrarCategoria
+            // dataGridView2
             // 
-            this.btnCadastrarCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCadastrarCategoria.Location = new System.Drawing.Point(457, 74);
-            this.btnCadastrarCategoria.Name = "btnCadastrarCategoria";
-            this.btnCadastrarCategoria.Size = new System.Drawing.Size(122, 36);
-            this.btnCadastrarCategoria.TabIndex = 6;
-            this.btnCadastrarCategoria.Text = "Cadastrar";
-            this.btnCadastrarCategoria.UseVisualStyleBackColor = true;
-            this.btnCadastrarCategoria.Click += new System.EventHandler(this.btnCadastrarCategoria_Click);
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(66, 166);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.TabIndex = 2;
             // 
             // frmConCategoria
             // 
@@ -129,6 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(594, 465);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "frmConCategoria";
@@ -137,6 +150,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,5 +165,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnCadastrarCategoria;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

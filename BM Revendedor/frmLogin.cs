@@ -29,7 +29,7 @@ namespace BM_Revendedor
             cmd = new SqlCommand(login, con);
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read()==true) {
-                new Form1().Show();
+                new frmPrincipal().Show();
                 this.Hide();
             }
             else

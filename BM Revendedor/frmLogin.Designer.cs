@@ -44,12 +44,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lbVersão = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnDuvida);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label1);
@@ -90,7 +93,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 30F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(97, 165);
+            this.label1.Location = new System.Drawing.Point(86, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 57);
             this.label1.TabIndex = 2;
@@ -228,6 +231,15 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BM_Revendedor.Properties.Resources.logo_transparent___Copia__2_;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 138);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 102);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -255,6 +267,7 @@
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +291,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbVersão;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
