@@ -63,12 +63,6 @@
     <Compile Include="FORMULARIOS\Categoria\frmConCategoria.Designer.cs">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMULARIOS\Marca\frmCadMarca.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORMULARIOS\Marca\frmCadMarca.Designer.cs">
-      <DependentUpon>frmCadMarca.cs</DependentUpon>
-    </Compile>
     <Compile Include="FORMULARIOS\Marca\frmConMarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,9 +88,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Categoria\frmConCategoria.resx">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORMULARIOS\Marca\frmCadMarca.resx">
-      <DependentUpon>frmCadMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Marca\frmConMarca.resx">
       <DependentUpon>frmConMarca.cs</DependentUpon>
