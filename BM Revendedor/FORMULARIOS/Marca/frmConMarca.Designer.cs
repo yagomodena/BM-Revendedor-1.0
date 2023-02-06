@@ -102,6 +102,7 @@
             this.btnCadastrarMarca.TabIndex = 6;
             this.btnCadastrarMarca.Text = "Cadastrar";
             this.btnCadastrarMarca.UseVisualStyleBackColor = true;
+            this.btnCadastrarMarca.Click += new System.EventHandler(this.btnCadastrarMarca_Click);
             // 
             // txtNomeMarca
             // 
