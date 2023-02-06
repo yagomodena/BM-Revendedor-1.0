@@ -33,8 +33,14 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
                 con.Close();
                 txtNomeCategoria.Text = "";
                 MessageBox.Show("Categoria criada com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
             }
+        }
+
+        private void frmConCategoria_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'bMSDataSet.tbCategoria'. Você pode movê-la ou removê-la conforme necessário.
+            this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
+
         }
     }
 }

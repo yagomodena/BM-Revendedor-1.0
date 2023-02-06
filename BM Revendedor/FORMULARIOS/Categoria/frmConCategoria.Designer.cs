@@ -28,14 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnExcluirCategoria = new System.Windows.Forms.Button();
+            this.btnNovoCategoria = new System.Windows.Forms.Button();
             this.btnCadastrarCategoria = new System.Windows.Forms.Button();
             this.txtNomeCategoria = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnNovoCategoria = new System.Windows.Forms.Button();
-            this.btnExcluirCategoria = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bMSDataSet = new BM_Revendedor.BMSDataSet();
+            this.tbCategoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbCategoriaTableAdapter = new BM_Revendedor.BMSDataSetTableAdapters.tbCategoriaTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bMSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCategoriaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,6 +62,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(578, 121);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnCancelar.Location = new System.Drawing.Point(421, 69);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(122, 36);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluirCategoria
+            // 
+            this.btnExcluirCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnExcluirCategoria.Location = new System.Drawing.Point(288, 69);
+            this.btnExcluirCategoria.Name = "btnExcluirCategoria";
+            this.btnExcluirCategoria.Size = new System.Drawing.Size(122, 36);
+            this.btnExcluirCategoria.TabIndex = 8;
+            this.btnExcluirCategoria.Text = "Excluir";
+            this.btnExcluirCategoria.UseVisualStyleBackColor = true;
+            // 
+            // btnNovoCategoria
+            // 
+            this.btnNovoCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnNovoCategoria.Location = new System.Drawing.Point(32, 69);
+            this.btnNovoCategoria.Name = "btnNovoCategoria";
+            this.btnNovoCategoria.Size = new System.Drawing.Size(122, 36);
+            this.btnNovoCategoria.TabIndex = 7;
+            this.btnNovoCategoria.Text = "Novo";
+            this.btnNovoCategoria.UseVisualStyleBackColor = true;
             // 
             // btnCadastrarCategoria
             // 
@@ -82,35 +122,52 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Nome Categoria";
             // 
-            // btnNovoCategoria
+            // dataGridView1
             // 
-            this.btnNovoCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnNovoCategoria.Location = new System.Drawing.Point(32, 69);
-            this.btnNovoCategoria.Name = "btnNovoCategoria";
-            this.btnNovoCategoria.Size = new System.Drawing.Size(122, 36);
-            this.btnNovoCategoria.TabIndex = 7;
-            this.btnNovoCategoria.Text = "Novo";
-            this.btnNovoCategoria.UseVisualStyleBackColor = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tbCategoriaBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 121);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(578, 344);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // btnExcluirCategoria
+            // bMSDataSet
             // 
-            this.btnExcluirCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnExcluirCategoria.Location = new System.Drawing.Point(288, 69);
-            this.btnExcluirCategoria.Name = "btnExcluirCategoria";
-            this.btnExcluirCategoria.Size = new System.Drawing.Size(122, 36);
-            this.btnExcluirCategoria.TabIndex = 8;
-            this.btnExcluirCategoria.Text = "Excluir";
-            this.btnExcluirCategoria.UseVisualStyleBackColor = true;
+            this.bMSDataSet.DataSetName = "BMSDataSet";
+            this.bMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // btnCancelar
+            // tbCategoriaBindingSource
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCancelar.Location = new System.Drawing.Point(421, 69);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 36);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.tbCategoriaBindingSource.DataMember = "tbCategoria";
+            this.tbCategoriaBindingSource.DataSource = this.bMSDataSet;
+            // 
+            // tbCategoriaTableAdapter
+            // 
+            this.tbCategoriaTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             // 
             // frmConCategoria
             // 
@@ -118,13 +175,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(578, 465);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Categorias";
+            this.Load += new System.EventHandler(this.frmConCategoria_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bMSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbCategoriaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -138,5 +200,11 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluirCategoria;
         private System.Windows.Forms.Button btnNovoCategoria;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private BMSDataSet bMSDataSet;
+        private System.Windows.Forms.BindingSource tbCategoriaBindingSource;
+        private BMSDataSetTableAdapters.tbCategoriaTableAdapter tbCategoriaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
     }
 }
