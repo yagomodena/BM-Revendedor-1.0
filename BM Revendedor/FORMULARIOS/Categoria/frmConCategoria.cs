@@ -12,7 +12,7 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
         }
 
         //Abrir a conexão com o banco
-        SqlConnection con = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=BMS;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
 
