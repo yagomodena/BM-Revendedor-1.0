@@ -69,6 +69,24 @@
     <Compile Include="FORMULARIOS\Categoria\frmConCategoria.Designer.cs">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMULARIOS\Clientes\frmCadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Clientes\frmCadCliente.Designer.cs">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Clientes\frmConCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Clientes\frmConCliente.Designer.cs">
+      <DependentUpon>frmConCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmCadMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Marca\frmCadMarca.Designer.cs">
+      <DependentUpon>frmCadMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMULARIOS\Marca\frmConMarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Categoria\frmConCategoria.resx">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Clientes\frmCadCliente.resx">
+      <DependentUpon>frmCadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Clientes\frmConCliente.resx">
+      <DependentUpon>frmConCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Marca\frmCadMarca.resx">
+      <DependentUpon>frmCadMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Marca\frmConMarca.resx">
       <DependentUpon>frmConMarca.cs</DependentUpon>
@@ -142,7 +169,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FORMULARIOS\Clientes\" />
     <Folder Include="FORMULARIOS\Entregas\" />
     <Folder Include="FORMULARIOS\Estoque\" />
     <Folder Include="FORMULARIOS\Faturamento\" />

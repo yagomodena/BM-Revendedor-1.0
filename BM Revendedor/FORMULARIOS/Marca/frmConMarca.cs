@@ -44,5 +44,21 @@ namespace BM_Revendedor.FORMULARIOS.Marca
                 MessageBox.Show("Categoria criada com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnNovaMarca_Click(object sender, EventArgs e)
+        {
+            frmCadMarca frm = new frmCadMarca();
+            frm.Show();
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
+        }
+
+        private void frmConMarca_Load(object sender, EventArgs e)
+        {
+            this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
+        }
     }
 }

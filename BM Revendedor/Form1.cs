@@ -1,4 +1,6 @@
 ﻿using BM_Revendedor.FORMULARIOS.Categoria;
+using BM_Revendedor.FORMULARIOS.Clientes;
+using BM_Revendedor.FORMULARIOS.Marca;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +32,32 @@ namespace BM_Revendedor
         {
             _objForm?.Close();
             _objForm = new frmConCategoria()
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill
+            };
+
+            pnlExibirFormularios.Controls.Add(_objForm);
+            _objForm.Show();
+        }
+
+        private void btnMarca_Click(object sender, EventArgs e)
+        {
+            _objForm?.Close();
+            _objForm = new frmConMarca()
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill
+            };
+
+            pnlExibirFormularios.Controls.Add(_objForm);
+            _objForm.Show();
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            _objForm?.Close();
+            _objForm = new frmConCliente()
             {
                 TopLevel = false,
                 Dock = DockStyle.Fill

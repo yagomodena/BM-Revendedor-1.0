@@ -20,7 +20,6 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
         {
             //TODO: esta linha de código carrega dados na tabela 'bMSDataSet.tbCategoria'. Você pode movê-la ou removê-la conforme necessário.
             this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -48,13 +47,6 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
 
         private void btnExcluirCategoria_Click(object sender, EventArgs e)
         {
-            //SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
-            //con.Open();
-            //SqlCommand cmd = new SqlCommand("DELETE tbCtegoria WHERE Nome = ('" + txtNomeCategoria.Text + "')", con);
-            //cmd.Parameters.AddWithValue(" + txtNomeCategoria.Text + ", int.Parse(txtNomeCategoria.Text));
-            //cmd.ExecuteNonQuery();
-            //con.Close();
-            //MessageBox.Show("Categoria excluída com sucesso!");
 
             if(dataGridView1.Rows.Count > 0)
             {

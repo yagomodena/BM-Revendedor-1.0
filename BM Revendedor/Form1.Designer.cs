@@ -203,6 +203,7 @@
             this.btnMarca.TabIndex = 22;
             this.btnMarca.Text = "MARCA";
             this.btnMarca.UseVisualStyleBackColor = true;
+            this.btnMarca.Click += new System.EventHandler(this.btnMarca_Click);
             // 
             // panel4
             // 
@@ -248,6 +249,7 @@
             this.btnCliente.TabIndex = 15;
             this.btnCliente.Text = "CLIENTE";
             this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // panel8
             // 
