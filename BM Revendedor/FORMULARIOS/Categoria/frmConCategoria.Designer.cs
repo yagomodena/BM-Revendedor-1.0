@@ -31,65 +31,71 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtNomeCategoria = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnExcluirCategoria = new System.Windows.Forms.Button();
             this.btnNovoCategoria = new System.Windows.Forms.Button();
             this.btnCadastrarCategoria = new System.Windows.Forms.Button();
-            this.txtNomeCategoria = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbCategoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bMSDataSet = new BM_Revendedor.BMSDataSet();
             this.tbCategoriaTableAdapter = new BM_Revendedor.BMSDataSetTableAdapters.tbCategoriaTableAdapter();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbCategoriaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMSDataSet)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.btnPesquisar);
-            this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.btnExcluirCategoria);
-            this.panel1.Controls.Add(this.btnNovoCategoria);
-            this.panel1.Controls.Add(this.btnCadastrarCategoria);
             this.panel1.Controls.Add(this.txtNomeCategoria);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 121);
+            this.panel1.Size = new System.Drawing.Size(578, 74);
             this.panel1.TabIndex = 0;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnPesquisar.Location = new System.Drawing.Point(532, 24);
+            this.btnPesquisar.Location = new System.Drawing.Point(496, 15);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(34, 36);
+            this.btnPesquisar.Size = new System.Drawing.Size(70, 36);
             this.btnPesquisar.TabIndex = 10;
             this.btnPesquisar.Text = "P";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // btnCancelar
+            // txtNomeCategoria
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCancelar.Location = new System.Drawing.Point(421, 69);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 36);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.txtNomeCategoria.Enabled = false;
+            this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtNomeCategoria.Location = new System.Drawing.Point(153, 25);
+            this.txtNomeCategoria.Name = "txtNomeCategoria";
+            this.txtNomeCategoria.Size = new System.Drawing.Size(329, 26);
+            this.txtNomeCategoria.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(12, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Nome Categoria";
             // 
             // btnExcluirCategoria
             // 
             this.btnExcluirCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnExcluirCategoria.Location = new System.Drawing.Point(288, 69);
+            this.btnExcluirCategoria.Location = new System.Drawing.Point(268, 15);
             this.btnExcluirCategoria.Name = "btnExcluirCategoria";
             this.btnExcluirCategoria.Size = new System.Drawing.Size(122, 36);
             this.btnExcluirCategoria.TabIndex = 8;
@@ -100,7 +106,7 @@
             // btnNovoCategoria
             // 
             this.btnNovoCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnNovoCategoria.Location = new System.Drawing.Point(32, 69);
+            this.btnNovoCategoria.Location = new System.Drawing.Point(12, 15);
             this.btnNovoCategoria.Name = "btnNovoCategoria";
             this.btnNovoCategoria.Size = new System.Drawing.Size(122, 36);
             this.btnNovoCategoria.TabIndex = 7;
@@ -111,32 +117,12 @@
             // btnCadastrarCategoria
             // 
             this.btnCadastrarCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnCadastrarCategoria.Location = new System.Drawing.Point(160, 69);
+            this.btnCadastrarCategoria.Location = new System.Drawing.Point(140, 15);
             this.btnCadastrarCategoria.Name = "btnCadastrarCategoria";
             this.btnCadastrarCategoria.Size = new System.Drawing.Size(122, 36);
             this.btnCadastrarCategoria.TabIndex = 6;
             this.btnCadastrarCategoria.Text = "Cadastrar";
             this.btnCadastrarCategoria.UseVisualStyleBackColor = true;
-            this.btnCadastrarCategoria.Click += new System.EventHandler(this.btnCadastrarCategoria_Click);
-            // 
-            // txtNomeCategoria
-            // 
-            this.txtNomeCategoria.Enabled = false;
-            this.txtNomeCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtNomeCategoria.Location = new System.Drawing.Point(189, 34);
-            this.txtNomeCategoria.Name = "txtNomeCategoria";
-            this.txtNomeCategoria.Size = new System.Drawing.Size(329, 26);
-            this.txtNomeCategoria.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(48, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Nome Categoria";
             // 
             // dataGridView1
             // 
@@ -147,11 +133,11 @@
             this.nomeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tbCategoriaBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 74);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(578, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(578, 325);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -186,12 +172,24 @@
             // 
             this.tbCategoriaTableAdapter.ClearBeforeFill = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnNovoCategoria);
+            this.panel2.Controls.Add(this.btnCadastrarCategoria);
+            this.panel2.Controls.Add(this.btnExcluirCategoria);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 336);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(578, 63);
+            this.panel2.TabIndex = 9;
+            // 
             // frmConCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(578, 465);
+            this.ClientSize = new System.Drawing.Size(578, 399);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -204,6 +202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbCategoriaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMSDataSet)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -214,7 +213,6 @@
         private System.Windows.Forms.TextBox txtNomeCategoria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCadastrarCategoria;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluirCategoria;
         private System.Windows.Forms.Button btnNovoCategoria;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -224,5 +222,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -16,27 +16,6 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
 
-        private void btnCadastrarCategoria_Click(object sender, EventArgs e)
-        {
-            if (txtNomeCategoria.Text == "")
-            {
-                MessageBox.Show("Por favor, insira um nome para a Categoria!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNomeCategoria.Text = "";
-                txtNomeCategoria.Focus();
-            }
-            else if (txtNomeCategoria.Text != null)
-            {
-                con.Open();
-                string REGISTRO = "INSERT INTO tbCategoria VALUES('" + txtNomeCategoria.Text + "')";
-                cmd = new SqlCommand(REGISTRO, con);
-                cmd.ExecuteReader();
-                con.Close();
-                txtNomeCategoria.Text = "";
-                MessageBox.Show("Categoria criada com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
-            }
-        }
-
         private void frmConCategoria_Load(object sender, EventArgs e)
         {
             //TODO: esta linha de código carrega dados na tabela 'bMSDataSet.tbCategoria'. Você pode movê-la ou removê-la conforme necessário.
@@ -51,32 +30,48 @@ namespace BM_Revendedor.FORMULARIOS.Categoria
 
         private void btnNovoCategoria_Click(object sender, EventArgs e)
         {
-            txtNomeCategoria.Enabled = true;
+            frmCadCategoria frm = new frmCadCategoria();
+            frm.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[1].FormattedValue.ToString());
-            SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Delete tbCategoria WHERE id = '" +id+ "'", con);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Categoria excluída com sucesso!");
-            this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
-            con.Close();
+            //int id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[1].FormattedValue.ToString());
+            //SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("Delete tbCategoria WHERE id = '" +id+ "'", con);
+            //cmd.ExecuteNonQuery();
+            //MessageBox.Show("Categoria excluída com sucesso!");
+            //this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
+            //con.Close();
         }
 
         private void btnExcluirCategoria_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("DELETE tbCtegoria WHERE Nome = ('" + txtNomeCategoria.Text + "')", con);
-            cmd.Parameters.AddWithValue(" + txtNomeCategoria.Text + ", int.Parse(txtNomeCategoria.Text));
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Categoria excluída com sucesso!");
+            //SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
+            //con.Open();
+            //SqlCommand cmd = new SqlCommand("DELETE tbCtegoria WHERE Nome = ('" + txtNomeCategoria.Text + "')", con);
+            //cmd.Parameters.AddWithValue(" + txtNomeCategoria.Text + ", int.Parse(txtNomeCategoria.Text));
+            //cmd.ExecuteNonQuery();
+            //con.Close();
+            //MessageBox.Show("Categoria excluída com sucesso!");
 
+            if(dataGridView1.Rows.Count > 0)
+            {
+                dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+                SqlConnection con = new SqlConnection(@"DATA SOURCE=localhost\SQLEXPRESS;Initial CATALOG=BMS;Integrated SECURITY=True");
+                con.Open();
+                //SqlCommand cmd = new SqlCommand("Delete tbCategoria WHERE id = '" + remover + "'", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Categoria excluída com sucesso!");
+                this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
+                con.Close();
+            }
+        }
 
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            this.tbCategoriaTableAdapter.Fill(this.bMSDataSet.tbCategoria);
         }
     }
 }
