@@ -49,7 +49,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnlExibirFormularios = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -60,8 +59,6 @@
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.pnlExibirFormularios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -290,21 +287,11 @@
             // pnlExibirFormularios
             // 
             this.pnlExibirFormularios.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pnlExibirFormularios.Controls.Add(this.pictureBox1);
             this.pnlExibirFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlExibirFormularios.Location = new System.Drawing.Point(171, 0);
             this.pnlExibirFormularios.Name = "pnlExibirFormularios";
             this.pnlExibirFormularios.Size = new System.Drawing.Size(987, 756);
             this.pnlExibirFormularios.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BM_Revendedor.Properties.Resources.logo_transparent___Copia;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 233);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(392, 227);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // frmPrincipal
             // 
@@ -329,8 +316,6 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.pnlExibirFormularios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,7 +342,6 @@
         private System.Windows.Forms.Button btnProduto;
         private System.Windows.Forms.Button btnMarca;
         private System.Windows.Forms.Button btnCategoria;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
