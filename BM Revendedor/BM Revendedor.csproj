@@ -57,12 +57,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORMULARIOS\Categoria\frmCadCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORMULARIOS\Categoria\frmCadCategoria.Designer.cs">
-      <DependentUpon>frmCadCategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FORMULARIOS\Categoria\frmConCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,9 +103,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORMULARIOS\Categoria\frmCadCategoria.resx">
-      <DependentUpon>frmCadCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\Categoria\frmConCategoria.resx">
       <DependentUpon>frmConCategoria.cs</DependentUpon>
