@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.chcMasculino = new System.Windows.Forms.CheckBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chcFeminino = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chcWppSIM = new System.Windows.Forms.CheckBox();
+            this.chcWppNAO = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mskCelular = new System.Windows.Forms.MaskedTextBox();
+            this.mskResidencial = new System.Windows.Forms.MaskedTextBox();
+            this.mskDataNascimento = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -66,31 +66,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
-            // textBox1
+            // txtNomeCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(20, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(329, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtNomeCliente.Location = new System.Drawing.Point(20, 55);
+            this.txtNomeCliente.Name = "txtNomeCliente";
+            this.txtNomeCliente.Size = new System.Drawing.Size(329, 26);
+            this.txtNomeCliente.TabIndex = 1;
             // 
-            // checkBox1
+            // chcMasculino
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 112);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(107, 24);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Masculino";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chcMasculino.AutoSize = true;
+            this.chcMasculino.Location = new System.Drawing.Point(20, 112);
+            this.chcMasculino.Name = "chcMasculino";
+            this.chcMasculino.Size = new System.Drawing.Size(107, 24);
+            this.chcMasculino.TabIndex = 3;
+            this.chcMasculino.Text = "Masculino";
+            this.chcMasculino.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(706, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Location = new System.Drawing.Point(733, 298);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(97, 34);
+            this.btnCadastrar.TabIndex = 4;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label3
             // 
@@ -101,15 +102,15 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Sexo";
             // 
-            // checkBox2
+            // chcFeminino
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(133, 112);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(99, 24);
-            this.checkBox2.TabIndex = 8;
-            this.checkBox2.Text = "Feminino";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chcFeminino.AutoSize = true;
+            this.chcFeminino.Location = new System.Drawing.Point(133, 112);
+            this.chcFeminino.Name = "chcFeminino";
+            this.chcFeminino.Size = new System.Drawing.Size(99, 24);
+            this.chcFeminino.TabIndex = 8;
+            this.chcFeminino.Text = "Feminino";
+            this.chcFeminino.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -119,13 +120,6 @@
             this.label4.Size = new System.Drawing.Size(42, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "CPF";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(365, 55);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(147, 26);
-            this.textBox4.TabIndex = 10;
             // 
             // label5
             // 
@@ -139,25 +133,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(646, 32);
+            this.label6.Location = new System.Drawing.Point(675, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Tel. Residencial";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(528, 55);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 26);
-            this.textBox5.TabIndex = 13;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(650, 55);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(124, 26);
-            this.textBox6.TabIndex = 14;
             // 
             // label7
             // 
@@ -168,13 +148,6 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Data Nascimento";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(248, 110);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(140, 26);
-            this.textBox7.TabIndex = 16;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -184,44 +157,44 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Deseja receber promoções no WhatsApp";
             // 
-            // checkBox3
+            // chcWppSIM
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 316);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(60, 24);
-            this.checkBox3.TabIndex = 18;
-            this.checkBox3.Text = "Sim";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chcWppSIM.AutoSize = true;
+            this.chcWppSIM.Location = new System.Drawing.Point(12, 316);
+            this.chcWppSIM.Name = "chcWppSIM";
+            this.chcWppSIM.Size = new System.Drawing.Size(60, 24);
+            this.chcWppSIM.TabIndex = 18;
+            this.chcWppSIM.Text = "Sim";
+            this.chcWppSIM.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chcWppNAO
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(78, 316);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(61, 24);
-            this.checkBox4.TabIndex = 19;
-            this.checkBox4.Text = "Não";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chcWppNAO.AutoSize = true;
+            this.chcWppNAO.Location = new System.Drawing.Point(78, 316);
+            this.chcWppNAO.Name = "chcWppNAO";
+            this.chcWppNAO.Size = new System.Drawing.Size(61, 24);
+            this.chcWppNAO.TabIndex = 19;
+            this.chcWppNAO.Text = "Não";
+            this.chcWppNAO.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.mskDataNascimento);
+            this.groupBox1.Controls.Add(this.mskResidencial);
+            this.groupBox1.Controls.Add(this.mskCelular);
+            this.groupBox1.Controls.Add(this.mskCPF);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNomeCliente);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.chcFeminino);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.chcMasculino);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(791, 153);
+            this.groupBox1.Size = new System.Drawing.Size(818, 153);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Cadastrais";
@@ -229,56 +202,17 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtBairro);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtNumero);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txtRua);
             this.groupBox2.Location = new System.Drawing.Point(12, 176);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(791, 106);
+            this.groupBox2.Size = new System.Drawing.Size(818, 106);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Endereço";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Rua";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(20, 55);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(329, 26);
-            this.textBox8.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(368, 55);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 26);
-            this.textBox3.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(364, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Número";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(528, 55);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(246, 26);
-            this.textBox9.TabIndex = 4;
             // 
             // label10
             // 
@@ -289,19 +223,91 @@
             this.label10.TabIndex = 5;
             this.label10.Text = "Bairro";
             // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(528, 55);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(246, 26);
+            this.txtBairro.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(364, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Número";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(368, 55);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(144, 26);
+            this.txtNumero.TabIndex = 2;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Rua";
+            // 
+            // txtRua
+            // 
+            this.txtRua.Location = new System.Drawing.Point(20, 55);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(329, 26);
+            this.txtRua.TabIndex = 1;
+            // 
+            // mskCPF
+            // 
+            this.mskCPF.Location = new System.Drawing.Point(365, 55);
+            this.mskCPF.Mask = "000.000.000-00";
+            this.mskCPF.Name = "mskCPF";
+            this.mskCPF.Size = new System.Drawing.Size(147, 26);
+            this.mskCPF.TabIndex = 17;
+            // 
+            // mskCelular
+            // 
+            this.mskCelular.Location = new System.Drawing.Point(528, 55);
+            this.mskCelular.Mask = "(00)0 0000-0000";
+            this.mskCelular.Name = "mskCelular";
+            this.mskCelular.Size = new System.Drawing.Size(135, 26);
+            this.mskCelular.TabIndex = 18;
+            // 
+            // mskResidencial
+            // 
+            this.mskResidencial.Location = new System.Drawing.Point(679, 55);
+            this.mskResidencial.Mask = "0000-0000";
+            this.mskResidencial.Name = "mskResidencial";
+            this.mskResidencial.Size = new System.Drawing.Size(124, 26);
+            this.mskResidencial.TabIndex = 19;
+            // 
+            // mskDataNascimento
+            // 
+            this.mskDataNascimento.Location = new System.Drawing.Point(253, 110);
+            this.mskDataNascimento.Mask = "00/00/0000";
+            this.mskDataNascimento.Name = "mskDataNascimento";
+            this.mskDataNascimento.Size = new System.Drawing.Size(135, 26);
+            this.mskDataNascimento.TabIndex = 20;
+            this.mskDataNascimento.ValidatingType = typeof(System.DateTime);
+            // 
             // frmCadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 344);
+            this.ClientSize = new System.Drawing.Size(847, 358);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.chcWppNAO);
+            this.Controls.Add(this.chcWppSIM);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCadastrar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmCadCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -318,29 +324,29 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtNomeCliente;
+        private System.Windows.Forms.CheckBox chcMasculino;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chcFeminino;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chcWppSIM;
+        private System.Windows.Forms.CheckBox chcWppNAO;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.MaskedTextBox mskDataNascimento;
+        private System.Windows.Forms.MaskedTextBox mskResidencial;
+        private System.Windows.Forms.MaskedTextBox mskCelular;
+        private System.Windows.Forms.MaskedTextBox mskCPF;
     }
 }

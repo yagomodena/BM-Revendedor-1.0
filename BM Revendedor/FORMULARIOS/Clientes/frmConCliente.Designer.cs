@@ -201,6 +201,7 @@
             this.CPF.MinimumWidth = 6;
             this.CPF.Name = "CPF";
             this.CPF.ReadOnly = true;
+            this.CPF.Width = 125;
             // 
             // TELCELULAR
             // 
@@ -208,6 +209,7 @@
             this.TELCELULAR.MinimumWidth = 6;
             this.TELCELULAR.Name = "TELCELULAR";
             this.TELCELULAR.ReadOnly = true;
+            this.TELCELULAR.Width = 125;
             // 
             // TELEFONERESIDENCIAL
             // 
@@ -215,6 +217,7 @@
             this.TELEFONERESIDENCIAL.MinimumWidth = 6;
             this.TELEFONERESIDENCIAL.Name = "TELEFONERESIDENCIAL";
             this.TELEFONERESIDENCIAL.ReadOnly = true;
+            this.TELEFONERESIDENCIAL.Width = 125;
             // 
             // SEXO
             // 
